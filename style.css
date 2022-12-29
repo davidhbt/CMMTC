@@ -428,6 +428,15 @@ a {
   .left p{
     font-size: 23px;
   }
+  .special{
+    background-color: white;
+  }
+  .contact{
+    background-color: white;
+  }
+  .nav-link{
+    font-size: 15px;
+  }
 
   
   }
@@ -464,7 +473,7 @@ a {
     font-size: 70px;
   }
   .span1{
-    font-size: 75px;
+    font-size: 80px;
   }
   .abus p{
     font-size: 15px;

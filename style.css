@@ -99,7 +99,8 @@ a {
 
 .abus{
   width: 50%;
-  height: 100vh;
+  height: auto;
+  padding: 100px;
   /* background-color: red; */
   display: flex;
   flex-direction: column;
@@ -276,18 +277,23 @@ a {
   cursor: pointer;
 }
 @media  (max-width:1161px){
+  .title{
+    /* background-color: violet; */
+    height: 100vh;
+  }
   .title h1{
-    font-size: 60px;
+    font-size: 100px;
     margin-top: 100px;
   }
   #about{
     height: auto;
   }
   .span1{
-    font-size: 80px;
+    font-size: 150px;
   }
   .landing{
     height: auto;
+    /* background-color: blue; */
   }
     body{
     text-align: center;
@@ -315,6 +321,10 @@ a {
   #about{
     justify-content: center;
     text-align: center;
+    align-items: center;
+    /* height: 100vh; */
+    height: auto;
+    /* background-color: red; */
   }
   .special{
     height: 500vh;
@@ -323,11 +333,16 @@ a {
     width: 100%;
     justify-content: center;
     align-items: center;
+    margin-block: auto;
+    height: 500px;
+    /* background-color: black; */
   }
+
   .abus h1{
-    margin: 0px;
-    margin-inline: 0;
-    font-size: 25px;
+    /* margin: 0px;
+    margin-inline: 0; */
+    /* margin-block: auto; */
+    font-size: 45px;
   }
   .abus p {
     margin: 0px;
@@ -374,23 +389,98 @@ a {
     font-weight: 500;
   }
   .special{
-    height: 250vh;
+    /* height: 250vh; */
+    height: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+
     flex-direction: column;
   }
+  .contact{
+    height: auto;
+  }
+  .con{
+    /* height: auto; */
+  }
   .what{
-    margin-bottom: 500px;
+    /* margin-bottom: 500px; */
   }
   .boxes2{
     flex-direction: column;
     margin: 0px;
+    height: auto;
   }
   .box{
     margin: 50px;
   }
   .what{
     font-size: 30px;
+    margin-top: 40px;
   }
+  .contact h1{
+    margin-top: 30px;
+    font-size: 50px;
+    letter-spacing: 1px;
+  }
+  .left h1{
+    font-size: 30px;
+  }
+  .left p{
+    font-size: 23px;
+  }
+
   
   }
+
+@media (max-width:703px){
+  .contact h1{
+    margin-top: 50px;
+
+  }
+  .title h1{
+    font-size: 80px;
+  }
+  .span1{
+    font-size: 80px;
+  }
+  .abus p{
+    font-size: 15px;
+  /* background-color: green; */
+  }
+  .abus h1{
+    font-size: 30px;
+  /* background-color: black; */
+
+  }
+  .abus{
+    width: 100%;
+    margin-inline: 0;
+    /* background-color: red; */
+    padding: 0px;
+  }
+}
+@media (max-width:398px){
+  .title h1{
+    font-size: 70px;
+  }
+  .span1{
+    font-size: 75px;
+  }
+  .abus p{
+    font-size: 15px;
+  /* background-color: green; */
+  }
+  .left p{
+    font-size: 15px;
+    width: 100%;
+  }
+}
+
+@media (max-width:356px){
+  .title h1{
+    font-size: 50px;
+  }
+  .span1{
+    font-size: 65px;
+  }
+}

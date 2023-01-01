@@ -23,17 +23,25 @@ header {
   width: 100%;
   height: 200vh;
 }
+nav h1{
+  color: #7F00FF;
+  margin: 30px;
+  cursor: pointer;
+}
 nav {
-  width: 70%;
+  width: 100%;
   height: 60px;
-  /* background-color: rgb(245, 183, 183);     */
+  background-color: white;    
   margin: auto;
   /* display: flex; */
   align-items: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   color: black;
+  position: fixed;
+  /* box-shadow: 0 0px 50px -10px black; */
+  box-shadow: 0px 14px 28px -23px rgba(30, 30, 60, 0.48);
 }
 .nav-links {
   list-style: none;
@@ -42,7 +50,7 @@ nav {
   align-items: center;
   /* background-color: red;    */
   margin: auto;
-  width: 100%;
+  width: 70%;
   color: black;
 }
 .nav-link {
@@ -65,10 +73,10 @@ a {
 /* .nav-link:hover{
     border: 3px solid green;
 } */
-.landing {
+#landing {
   /* background-color: red; */
   width: 90%;
-  height: 90.5vh;
+  height: 100vh;
   margin: auto;
   display: flex;
   justify-content: center;
@@ -140,7 +148,7 @@ a {
   color: #7F00FF
 }
 .abus p {
-  width: 80%;
+  width: 100%;
   margin: 5px;
   margin-inline: 100px;
   font-weight: 600;
@@ -150,7 +158,7 @@ a {
   width: 40%;
 
 }
-.special{
+#special{
   width: 100%;
   height: 100vh;
   background-color: rgb(245,245,245);
@@ -242,7 +250,7 @@ a {
   font-size: 30px;
   cursor: pointer;
 }
-.contact{
+#contact{
   width: 100%;
   height: 100vh;
   display: flex;
@@ -321,14 +329,29 @@ a {
   cursor: pointer;
 }
 @media  (max-width:1161px){
+  nav h1{
+    display: none;
+  }
+  .boxx{
+    margin: 20px;
+  }
+  .boxx2{
+    margin: 20px;
+  }
   .abus h1{
     padding: 10px;
   }
-  .what{
-    padding: 10px;
+  .abus p{
+    width: 80%;
   }
-  .contact{
+  .what{
+    padding: 10px ;
+  }
+  #contact{
     height: auto;
+  }
+  #contact h1{
+    padding: 15px;
   }
   .con{
     height: auto;
@@ -349,7 +372,7 @@ a {
   .span1{
     font-size: 150px;
   }
-  .landing{
+  #landing{
     height: auto;
     /* background-color: blue; */
   }
@@ -359,7 +382,7 @@ a {
   .ill1{
     display: none;
   }
-  .landing{
+  #landing{
     text-align: center;
   }
   .nav-link{
@@ -379,7 +402,7 @@ a {
     height: auto;
     /* background-color: red; */
   }
-  .special{
+  #special{
     height: 500vh;
   }
   .abus {
@@ -403,7 +426,7 @@ a {
     /* background-color: black; */
   }
 
-  .special{
+  #special{
     /* height: 250vh; */
     height: auto;
     display: flex;
@@ -426,7 +449,7 @@ a {
     font-size: 30px;
     margin-top: 40px;
   }
-  .special{
+  #special{
     /* background-color: white; */
   }
   .nav-link{
